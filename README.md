@@ -60,7 +60,7 @@ git checkout -b <branch-name>
 Wenn der Name des Branches mit `feat/` beginnt und die Jira Ticketnummer folgt (z.B. `DATA-42`),
 werden Information zum Entwicklungsfortschritt im Ticket angezeigt.
 
-![git info im jira ticket](git--info-in-jira-ticket.png)
+![git info im jira ticket](git-info-in-jira-ticket.png)
 
 ## Synchronisierung mit `remote`
 
