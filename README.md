@@ -75,6 +75,18 @@ werden Information zum Entwicklungsfortschritt im Ticket angezeigt.
 
 ![git info im jira ticket](git-info-in-jira-ticket.png)
 
+### Tags
+
+Eine Sonderform von benannten commits sind `tags`. Diese sind geeignet, um auf dem Repository
+einen Zustand zu kennzeichnen, damit dieser wiederholbar abgerufen werden kann.
+
+Wird verwendet um produktiv deploybaren Code zu kennzeichnen.
+
+Beispiel `git tag v0.0.1` erstellt einen Tag lokal, mit `git push origin v0.0.1` wird dieser
+nach remote übertragen.
+
+Vorhandene tags werden mit `git tag --list` angezeigt.
+
 ## Synchronisierung mit `remote`
 
 ```shell
