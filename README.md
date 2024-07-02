@@ -113,8 +113,8 @@ Einzelne stashes werden nach dem Muster `stash@{<NUMMER>}` referenziert.
 Nützliche commands sind:
 
 - `git stash list` zum Auflisten aller stashes.
-- `git stash pop stash@{0}` zum Anwenden der im stash gespeicherten Änderungen und anschließendem Löschen des stashes.
-- `git stash drop stash@{0}` zum Löschen eines stashes.
+- `git stash pop stash@{<NUMMER>}` zum Anwenden der im stash gespeicherten Änderungen und anschließendem Löschen des stashes.
+- `git stash drop stash@{<NUMMER>}` zum Löschen eines stashes.
 
 ### `Merge` Konflikte
 
