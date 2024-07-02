@@ -44,6 +44,10 @@ Diese ist zwingend, d.h. eine leere Beschreibung bricht den Commitvorgang ab.
 Je nach Grad der Zusammenarbeit im Team, sollte die Commitbeschreibung eine
 kurze und prägnante Zusammenfassung der vorgenommenen Änderungen enthalten.
 
+Commits sollten *eine* atomare Änderung enthalten. Es ist besser, viele kleine
+commits zu haben, als einen großen. Zudem sollten die Änderungen zur Sicherung
+der eigenen Arbeit möglichst oft nach `remote` gepusht werden.
+
 Wie es nicht geht: [tutorial](https://www.linkedin.com/pulse/how-write-very-bad-commit-messages-ran-bar-zik), [whatthecommit](https://whatthecommit.com/), [codelord](https://www.codelord.net/2015/03/16/bad-commit-messages-hall-of-shame/)
 
 Ein pragmatischer Ansatz ist auf [dev.to](https://dev.to/thawkin3/how-to-write-awful-commit-messages-and-good-ones-too-1f8m)
