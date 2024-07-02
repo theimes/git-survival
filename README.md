@@ -116,6 +116,9 @@ Nützliche commands sind:
 - `git stash pop stash@{<NUMMER>}` zum Anwenden der im stash gespeicherten Änderungen und anschließendem Löschen des stashes.
 - `git stash drop stash@{<NUMMER>}` zum Löschen eines stashes.
 
+Achtung: ein `git apply stash@{<NUMMER>}` beläßt den stash im Verzeichnis, so daß sich im Laufe der
+Zeit eine ganze Menge ansammeln kann.
+
 ### `Merge` Konflikte
 
 Wichtigste Regel: *Don't panic*.
