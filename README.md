@@ -49,6 +49,15 @@ Wie es nicht geht: [tutorial](https://www.linkedin.com/pulse/how-write-very-bad-
 Ein pragmatischer Ansatz ist auf [dev.to](https://dev.to/thawkin3/how-to-write-awful-commit-messages-and-good-ones-too-1f8m)
 beschrieben.
 
+Mit `git commit -m` läßt sich direkt eine commit message übergeben, die dann allerdings nicht mehrzeilig sein kann.
+
+### Commit `--amend`
+
+Mit `git commit --amend` lassen sich weitere commits zu einem früheren commit hinzufügen.
+
+Aber **Achtung**: das ist nur solange sicher, wie der commit noch nicht gepusht wurde. 
+Ansonsten wird die git Historie zerstört.
+
 ## Branches
 
 Ein `Branch` ist ein benannter `commit`.
@@ -142,11 +151,27 @@ To push the current branch and set the remote as upstream, use
 Struktur
 
 ```shell
-git diff commit#1..commit#2
+git diff [commit#1..commit#2]
 ```
+
+Dabei könen die commits als hash oder als Name eingegeben werden.
+
+Werden keine Argumente übergeben, werden die Änderungen im aktuellen Ordner gegenüber
+den gespeicherten Daten angezeigt.
 
 ## `Merge` | `Rebase` | `Squash` Strategie
 
 Letzlich ist `merge` die sicherste Strategie. Nachteilig ist das Aufblähen der Commit Historie,
 was bei sehr großen Repositories (z.B. Linux) zu Problemen führen kann in unserer alltäglichen
 Arbeit jedoch kaum eine Rolle spielt (sh. [Offizielle `merge` Doku](https://git-scm.com/docs/git-merge)).
+
+Manchmal hört man den Vorschlag, doch einfach einen `git rebase` zu machen. 
+
+Dazu eine kleine Einordnung: wenn "normale" git Befehle so etwas wie Pflaster aufkleben sind, ist
+ein `git rebase` eher eine [Operation am offenen Herzen](https://medium.com/@dirk.avery/the-definitive-git-rebase-guide-dbd7717f9437).
+
+> quidquid agis, prudenter agas et respice finem
+
+## Disaster Recovery
+
+Sollten Dinge mal wirklich schlecht laufen ist [oshitgit](https://ohshitgit.com/de) erste Anlaufstelle.
